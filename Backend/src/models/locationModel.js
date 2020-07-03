@@ -11,7 +11,7 @@ export const LocationSchema = new Schema({
         type: Number
     },
     longitude: {
-        type: String
+        type: Number
     },
     created_date: {
        type: Date,
