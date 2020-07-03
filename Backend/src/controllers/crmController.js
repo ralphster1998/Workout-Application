@@ -1,51 +1,51 @@
 import mongoose from 'mongoose';
-import { ContactSchema } from '../models/crmModel';
+import { LocationSchema } from '../models/locationModel';
 
-const Contact = mongoose.model('Contact', ContactSchema);
+const Location = mongoose.model('Location', LocationSchema);
 
-export const addNewContact = (req, res) => {
-    let newContact = new Contact(req.body);
+export const addNewLocation = (req, res) => {
+    let newLocation = new Location(req.body);
 
-    newContact.save((err, contact) => {
+    newLocation.save((err, location) => {
         if (err) {
             res.send(err);
         }
-        res.json(contact);
+        res.json(location);
     });
 };
 
-export const getContacts = (req, res) => {
-    Contact.find({}, (err, contact) => {
+export const getLocations = (req, res) => {
+    Location.find({}, (err, location) => {
         if (err) {
             res.send(err);
         }
-        res.json(contact);
+        res.json(location);
     });
 };
 
-export const getContactWithID = (req, res) => {
-    Contact.findById(req.params.contactId, (err, contact) => {
+export const getLocationWithID = (req, res) => {
+    Location.findById(req.params.locationId, (err, location) => {
         if (err) {
             res.send(err);
         }
-        res.json(contact);
+        res.json(location);
     });
 }
 
-export const updateContact = (req, res) => {
-    Contact.findOneAndUpdate({ _id: req.params.contactId}, req.body, { new: true }, (err, contact) => {
+export const updateLocation = (req, res) => {
+    Location.findOneAndUpdate({ _id: req.params.locationId}, req.body, { new: true }, (err, location) => {
         if (err) {
             res.send(err);
         }
-        res.json(contact);
+        res.json(location);
     })
 }
 
-export const deleteContact = (req, res) => {
-    Contact.remove({ _id: req.params.contactId }, (err, contact) => {
+export const deleteLocation = (req, res) => {
+    Location.remove({ _id: req.params.locationId }, (err, location) => {
         if (err) {
             res.send(err);
         }
-        res.json({ message: 'Successfully deleted contact'});
+        res.json({ message: 'Deleted location'});
     })
 }
