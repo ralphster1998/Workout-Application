@@ -4,7 +4,7 @@ import {
     getContactWithID, 
     updateContact,
     deleteContact 
-} from '../controllers/crmController';
+} from '../controllers/locationController';
 
 const routes = (app) => {
     app.route('/contact')
