@@ -1,32 +1,32 @@
 import { 
-    addNewContact, 
-    getContacts, 
-    getContactWithID, 
-    updateContact,
-    deleteContact 
+    addNewLocation, 
+    getLocations, 
+    getLocationWithID, 
+    updateLocation,
+    deleteLocation 
 } from '../controllers/locationController';
 
 const routes = (app) => {
-    app.route('/contact')
+    app.route('/location')
     .get((req, res, next) => {
         // middleware
         console.log(`Request from: ${req.originalUrl}`)
         console.log(`Request type: ${req.method}`)
         next();
-    }, getContacts)
+    }, getLocations)
     
     // POST endpoint
-    .post(addNewContact);
+    .post(addNewLocation);
 
-    app.route('/contact/:contactId')
-    // get specific contact
-    .get(getContactWithID)
+    app.route('/location/:locationId')
+    // get specific Location
+    .get(getLocationWithID)
     
     // put request
-    .put(updateContact)
+    .put(updateLocation)
 
     // delete request
-    .delete(deleteContact);
+    .delete(deleteLocation);
 }
 
 export default routes;
