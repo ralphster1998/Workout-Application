@@ -2,16 +2,19 @@ import mongoose from 'mongoose';
 
 const Schema = mongoose.Schema;
 
-export const LocationSchema = new Schema({
-    locationName: {
+export const ExerciseSchema = new Schema({
+    exerciseName: {
         type: String,
-        required: 'Enter the location name'
+        required: 'Enter the exercise name'
     },
-    latitude: {
+    currentReps: {
         type: Number
     },
-    longitude: {
+    goalReps: {
         type: Number
+    },
+    url: {
+        type: String
     },
     created_date: {
        type: Date,

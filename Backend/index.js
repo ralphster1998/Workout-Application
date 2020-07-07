@@ -1,14 +1,14 @@
 import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
-import routes from './src/routes/locationRoutes';
+import routes from './src/routes/exerciseRoutes';
 
 const app = express();
 const PORT = process.env.port || 3000;
 
 // mongoose connection
 mongoose.Promise = global.Promise;
-mongoose.connect('mongodb://localhost/location_db', {
+mongoose.connect('mongodb://localhost/workout_db', {
     useNewUrlParser: true
 });
 
