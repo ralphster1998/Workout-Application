@@ -1,0 +1,20 @@
+[
+    {
+        "exerciseName": "Tucked Planche",
+        "currentReps": 15,
+        "goalReps": 20,
+        "url": "www.youtube.com"
+    },
+    {
+        "exerciseName": "Push Up",
+        "currentReps": 10,
+        "goalReps": 30,
+        "url": "www.youtube.com"
+    },
+    {
+        "exerciseName": "Tucked Handstand",
+        "currentReps": 9,
+        "goalReps": 50,
+        "url": "www.youtube.com"
+    }
+]
