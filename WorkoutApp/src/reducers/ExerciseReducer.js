@@ -1,7 +1,7 @@
-import people from './people.json';
+import exercise from './exercise.json';
 
 const initialState = {
-    people,
+    exercise,
 }
 
 export default (state = initialState, action) => {

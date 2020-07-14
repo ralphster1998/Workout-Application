@@ -32,7 +32,7 @@ const styles = StyleSheet.create({
     },
 });
 
-const PeopleItem = (props) => {
+const ExerciseItem = (props) => {
     return (
         <View style={[theme.cardStyle, styles.card]}>
             <Image 
@@ -44,10 +44,10 @@ const PeopleItem = (props) => {
                 size={100}
                 style={styles.icon}
             />
-            <Text style={[theme.cardTitleStyle, styles.title]}>{props.people.firstName} {props.people.lastName}</Text>
-            <Text style={[theme.cardActionStyle, styles.action]}>{props.people.company}</Text>
+            <Text style={[theme.cardTitleStyle, styles.title]}>{props.exercise.exerciseName}</Text>
+            <Text style={[theme.cardActionStyle, styles.action]}>{props.exercise.url}</Text>
         </View>
     )
 }
 
-export default connect(null, actions)(PeopleItem);
+export default connect(null, actions)(ExerciseItem);

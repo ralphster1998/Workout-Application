@@ -10,8 +10,8 @@ import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
-import reducers from '../reducers/PeopleReducer';
-import PeopleList from './PeopleList';
+import reducers from '../reducers/ExerciseReducer';
+import ExerciseList from './ExerciseList';
 
 const store = createStore(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
@@ -21,7 +21,7 @@ export default class App extends Component<Props> {
     return (
       <Provider store={store}>
         <View style={styles.container}>
-          <PeopleList />
+          <ExerciseList />
         </View>
       </Provider>
     );

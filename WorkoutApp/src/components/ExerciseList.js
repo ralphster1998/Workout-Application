@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
 import { connect } from 'react-redux';
-import PeopleItem from './PeopleItem';
+import ExerciseItem from './ExerciseItem';
 
 const styles = StyleSheet.create({
     container: {
@@ -13,7 +13,7 @@ const styles = StyleSheet.create({
     }
 });
 
-class PeopleList extends Component {
+class ExerciseList extends Component {
     static navigationOptions = {
         tabBarIcon: ({tintColor}) => (
             <Icon name={'user'} size={50} color={tintColor} />
@@ -23,8 +23,8 @@ class PeopleList extends Component {
         return (
             <View style={styles.container}>
             <FlatList
-                data={this.props.people}
-                renderItem={({item}) => <PeopleItem people={item} />}
+                data={this.props.exercise}
+                renderItem={({item}) => <ExerciseItem exercise={item} />}
             />
             </View>
         )
@@ -32,7 +32,7 @@ class PeopleList extends Component {
 }
 
 const mapStateToProps = state => {
-    return { people: state.people }
+    return { exercise: state.exercise }
 }
 
-export default connect(mapStateToProps)(PeopleList);
+export default connect(mapStateToProps)(ExerciseList);

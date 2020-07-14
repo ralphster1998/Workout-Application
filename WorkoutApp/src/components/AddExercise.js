@@ -4,19 +4,19 @@ import { connect } from 'react-redux';
 import Icon from 'react-native-vector-icons/EvilIcons';
 import * as actions from '../actions';
 
-class CompanyList extends Component {
+class AddCategory extends Component {
     static navigationOptions = {
         tabBarIcon: ({tintColor}) => (
-            <Icon name={'archive'} size={50} color={tintColor} />
+            <Icon name={'plus'} size={50} color={tintColor} />
         )
     }
     render() {
         return (
             <View>
-                <Text>Company screen</Text>
+                <Text>Add person screen</Text>
             </View>
         )
     }
 }
 
-export default connect(null, actions)(CompanyList);
+export default connect(null, actions)(AddCategory);
