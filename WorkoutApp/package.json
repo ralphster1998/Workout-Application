@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "react": "16.13.1",
-    "react-native": "0.63.0",
+    "react-native": "0.63.1",
     "react-native-material-kit": "^0.6.0-beta.1",
     "react-native-vector-icons": "^7.0.0",
     "react-redux": "^7.2.0",
@@ -19,8 +19,8 @@
     "redux-thunk": "^2.3.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.10.4",
-    "@babel/runtime": "^7.10.4",
+    "@babel/core": "^7.10.5",
+    "@babel/runtime": "^7.10.5",
     "@react-native-community/eslint-config": "^2.0.0",
     "babel-jest": "^26.1.0",
     "eslint": "^7.4.0",

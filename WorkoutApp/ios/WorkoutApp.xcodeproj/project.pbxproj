@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* WorkoutAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* WorkoutAppTests.m */; };
+		0E8AF1E4C25F1680AB0F1DA1 /* libPods-WorkoutApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 506259B0E79DA921414B74E6 /* libPods-WorkoutApp-tvOS.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -15,27 +16,26 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* WorkoutAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* WorkoutAppTests.m */; };
-		4264F9EB890DFC8F1CF49375 /* libPods-WorkoutApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1CF2E619B08C1F7B4351C5BE /* libPods-WorkoutApp-tvOS.a */; };
-		4F28D28343608DDC3F8D2861 /* libPods-WorkoutApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 37E3D7AA10CB2F65B1D23644 /* libPods-WorkoutApp.a */; };
-		7404B8F2219DB9B4D54DF20D /* libPods-WorkoutApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D1FA867EFE2E3479CE9CE126 /* libPods-WorkoutApp-tvOSTests.a */; };
+		309023B1C99AB88498E70E4F /* libPods-WorkoutApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A97CBDC21D0D62D53E3C54E /* libPods-WorkoutApp.a */; };
+		3A199CA39CB55D7D8A9E6EC3 /* libPods-WorkoutApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C62224D2BEFF118F264117EB /* libPods-WorkoutApp-tvOSTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		C88F73A7923EC51A94CAE675 /* libPods-WorkoutApp-WorkoutAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0483343F4063F85E749FB4B /* libPods-WorkoutApp-WorkoutAppTests.a */; };
-		9FB5E0D88E0C4941B5DF68E8 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2DEF8BE702F54BF48C2F0544 /* AntDesign.ttf */; };
-		36A9E97DC96C4FA29480FE23 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D0BB7177542847DF9D80648C /* Entypo.ttf */; };
-		915D18D6CF0547078E0E8891 /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B6852940B02E4BCBB9278C50 /* EvilIcons.ttf */; };
-		D6DF9BD49983414BBE65A930 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 44A2565FC60D47B28BFA96CE /* Feather.ttf */; };
-		D6529F6C0F444B95A8A768A5 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46FA40D05E28499793CA4DF2 /* FontAwesome.ttf */; };
-		14F30A29F5324AF8A4B256EC /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A2A11965923C4CBDA3DEE7D0 /* FontAwesome5_Brands.ttf */; };
-		72D6F0FC1711481491719D6F /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7CEB67E9B1E04B43B13B6C5B /* FontAwesome5_Regular.ttf */; };
-		57AC8675A4894B87B18A16B7 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 050537BA401C4D8AB9B2E975 /* FontAwesome5_Solid.ttf */; };
-		B5CB1EB0D7A84A54B42359B4 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C08A9AD259B949878F4C2CCD /* Fontisto.ttf */; };
-		B65F873EBD964167883B2F09 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF41C1A462864AAABD258B16 /* Foundation.ttf */; };
-		2DC92A121EB74F39AD4E17EB /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0A1255F86FDC46FC9D216DB5 /* Ionicons.ttf */; };
-		C59C7DE2A84B438389BE1E04 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D74B962E5D945708D4B36B7 /* MaterialCommunityIcons.ttf */; };
-		5D68987B0077442DB8310EEF /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 315ADA7783DA4F1AB84AFC7B /* MaterialIcons.ttf */; };
-		F6AE22B16FA24453B956C554 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 235E6F53D46B4176A3876392 /* Octicons.ttf */; };
-		96865B01E4414391A336326F /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E38B7CECC92F403882FC8FF1 /* SimpleLineIcons.ttf */; };
-		CC8FA82E55C145558A45F6FC /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DB060531953C4D2D99EF0DEA /* Zocial.ttf */; };
+		856F8197E0F7374854273ABC /* libPods-WorkoutApp-WorkoutAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B763A1C2C8EB85E85582678C /* libPods-WorkoutApp-WorkoutAppTests.a */; };
+		D3FDC76ECDE049938C9FE345 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F514078B3BE5450FA4A19B59 /* AntDesign.ttf */; };
+		AA0C35637E9341CEA7357E74 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 396CD547F0F64772879240E8 /* Entypo.ttf */; };
+		7C36E08E4B13409CB8F7452C /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 096BDA0F032B4EDD9FCD8DD1 /* EvilIcons.ttf */; };
+		AF4B213A81894FFA80C73527 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 18E2CE60738B46149111D9E5 /* Feather.ttf */; };
+		E02CA2523BFB4F3D82C6E571 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6DE7883F1D9E4CD78E978558 /* FontAwesome.ttf */; };
+		1DFBD933F31146D39901FA94 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 85437E11D5624613BDD63E55 /* FontAwesome5_Brands.ttf */; };
+		14C2B1F7E2F54F18886B200A /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2603572C1A50455E9CC0700E /* FontAwesome5_Regular.ttf */; };
+		6540CF1D8C3E478986D89FC0 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2C2EA4BB856240BBB6457E10 /* FontAwesome5_Solid.ttf */; };
+		E6E3CC035B854EE49697FEA9 /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5FA70248C68644F395E6543B /* Fontisto.ttf */; };
+		610A73B86D7942F6878A1B7E /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6A40A0092A4843C7B966637F /* Foundation.ttf */; };
+		75F6C70043434E08A1DF6BFF /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E09A6E00D4ED487ABD8C576F /* Ionicons.ttf */; };
+		5BB1D03DA4FF41D88904CC19 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A62A7E7B37D74AF4A8D31067 /* MaterialCommunityIcons.ttf */; };
+		D6483D244F714179BE0AF76F /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A839E50024C89AFB88675 /* MaterialIcons.ttf */; };
+		DA1E8CBB33C94C1BBF175F74 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 46776FA0536F4635BA05E6B2 /* Octicons.ttf */; };
+		9808369360874249A2203EAB /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0B5DCFA26FF74A129E82F90A /* SimpleLineIcons.ttf */; };
+		E73195474A7D4AF799FED9E8 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4E141E50E67840CE8841AF03 /* Zocial.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,45 +60,45 @@
 		00E356EE1AD99517003FC87E /* WorkoutAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WorkoutAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* WorkoutAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WorkoutAppTests.m; sourceTree = "<group>"; };
-		029F2B2EC4E64879B70F30A4 /* Pods-WorkoutApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-WorkoutApp-tvOS/Pods-WorkoutApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* WorkoutApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorkoutApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = WorkoutApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = WorkoutApp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = WorkoutApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = WorkoutApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = WorkoutApp/main.m; sourceTree = "<group>"; };
-		1CF2E619B08C1F7B4351C5BE /* libPods-WorkoutApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WorkoutApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E47B1E0B4A5D006451C7 /* WorkoutApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WorkoutApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* WorkoutApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WorkoutApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		37E3D7AA10CB2F65B1D23644 /* libPods-WorkoutApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WorkoutApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		38ECB9EC52FBD8085B589F35 /* Pods-WorkoutApp-WorkoutAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp-WorkoutAppTests.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutApp-WorkoutAppTests/Pods-WorkoutApp-WorkoutAppTests.debug.xcconfig"; sourceTree = "<group>"; };
-		5DA02FFB0679B523A0BEFD1C /* Pods-WorkoutApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutApp-tvOSTests/Pods-WorkoutApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		3577A154B6756261C992E98F /* Pods-WorkoutApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutApp-tvOSTests/Pods-WorkoutApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		46706DC2A4073E7F12717EAB /* Pods-WorkoutApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-WorkoutApp-tvOS/Pods-WorkoutApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		4A97CBDC21D0D62D53E3C54E /* libPods-WorkoutApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WorkoutApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		506259B0E79DA921414B74E6 /* libPods-WorkoutApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WorkoutApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		61B8D6245FBC976CA9F951F8 /* Pods-WorkoutApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutApp-tvOS/Pods-WorkoutApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		6F75755C86C40B35E85D9DC1 /* Pods-WorkoutApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutApp/Pods-WorkoutApp.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = WorkoutApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		90967C04B2718D90A06073C1 /* Pods-WorkoutApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp.release.xcconfig"; path = "Target Support Files/Pods-WorkoutApp/Pods-WorkoutApp.release.xcconfig"; sourceTree = "<group>"; };
-		9F3112249DD018C3A385D18F /* Pods-WorkoutApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutApp/Pods-WorkoutApp.debug.xcconfig"; sourceTree = "<group>"; };
-		A10CF07FF477CE8E0C663CBA /* Pods-WorkoutApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-WorkoutApp-tvOSTests/Pods-WorkoutApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		BF4ADFEF84013F9502F29897 /* Pods-WorkoutApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutApp-tvOS/Pods-WorkoutApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		D0483343F4063F85E749FB4B /* libPods-WorkoutApp-WorkoutAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WorkoutApp-WorkoutAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D1FA867EFE2E3479CE9CE126 /* libPods-WorkoutApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WorkoutApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		D6A8DAD8A9B4F95CBE3E191C /* Pods-WorkoutApp-WorkoutAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp-WorkoutAppTests.release.xcconfig"; path = "Target Support Files/Pods-WorkoutApp-WorkoutAppTests/Pods-WorkoutApp-WorkoutAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		94A86B3ACCF344946DF8DB18 /* Pods-WorkoutApp-WorkoutAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp-WorkoutAppTests.release.xcconfig"; path = "Target Support Files/Pods-WorkoutApp-WorkoutAppTests/Pods-WorkoutApp-WorkoutAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		A27D499070E605CDD9726B05 /* Pods-WorkoutApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp.release.xcconfig"; path = "Target Support Files/Pods-WorkoutApp/Pods-WorkoutApp.release.xcconfig"; sourceTree = "<group>"; };
+		B2BF625837F8243B34B3F49A /* Pods-WorkoutApp-WorkoutAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp-WorkoutAppTests.debug.xcconfig"; path = "Target Support Files/Pods-WorkoutApp-WorkoutAppTests/Pods-WorkoutApp-WorkoutAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B763A1C2C8EB85E85582678C /* libPods-WorkoutApp-WorkoutAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WorkoutApp-WorkoutAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C62224D2BEFF118F264117EB /* libPods-WorkoutApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WorkoutApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7AB94C6740C48ABD34146DE /* Pods-WorkoutApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorkoutApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-WorkoutApp-tvOSTests/Pods-WorkoutApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		2DEF8BE702F54BF48C2F0544 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D0BB7177542847DF9D80648C /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B6852940B02E4BCBB9278C50 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		44A2565FC60D47B28BFA96CE /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		46FA40D05E28499793CA4DF2 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A2A11965923C4CBDA3DEE7D0 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7CEB67E9B1E04B43B13B6C5B /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		050537BA401C4D8AB9B2E975 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C08A9AD259B949878F4C2CCD /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DF41C1A462864AAABD258B16 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0A1255F86FDC46FC9D216DB5 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4D74B962E5D945708D4B36B7 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		315ADA7783DA4F1AB84AFC7B /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		235E6F53D46B4176A3876392 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E38B7CECC92F403882FC8FF1 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		DB060531953C4D2D99EF0DEA /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F514078B3BE5450FA4A19B59 /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		396CD547F0F64772879240E8 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		096BDA0F032B4EDD9FCD8DD1 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		18E2CE60738B46149111D9E5 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6DE7883F1D9E4CD78E978558 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		85437E11D5624613BDD63E55 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2603572C1A50455E9CC0700E /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2C2EA4BB856240BBB6457E10 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5FA70248C68644F395E6543B /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		6A40A0092A4843C7B966637F /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E09A6E00D4ED487ABD8C576F /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A62A7E7B37D74AF4A8D31067 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1C7A839E50024C89AFB88675 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		46776FA0536F4635BA05E6B2 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0B5DCFA26FF74A129E82F90A /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		4E141E50E67840CE8841AF03 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/react-native-vector-icons/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C88F73A7923EC51A94CAE675 /* libPods-WorkoutApp-WorkoutAppTests.a in Frameworks */,
+				856F8197E0F7374854273ABC /* libPods-WorkoutApp-WorkoutAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -114,7 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4F28D28343608DDC3F8D2861 /* libPods-WorkoutApp.a in Frameworks */,
+				309023B1C99AB88498E70E4F /* libPods-WorkoutApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +122,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4264F9EB890DFC8F1CF49375 /* libPods-WorkoutApp-tvOS.a in Frameworks */,
+				0E8AF1E4C25F1680AB0F1DA1 /* libPods-WorkoutApp-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,7 +130,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7404B8F2219DB9B4D54DF20D /* libPods-WorkoutApp-tvOSTests.a in Frameworks */,
+				3A199CA39CB55D7D8A9E6EC3 /* libPods-WorkoutApp-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -173,28 +173,12 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				37E3D7AA10CB2F65B1D23644 /* libPods-WorkoutApp.a */,
-				D0483343F4063F85E749FB4B /* libPods-WorkoutApp-WorkoutAppTests.a */,
-				1CF2E619B08C1F7B4351C5BE /* libPods-WorkoutApp-tvOS.a */,
-				D1FA867EFE2E3479CE9CE126 /* libPods-WorkoutApp-tvOSTests.a */,
+				4A97CBDC21D0D62D53E3C54E /* libPods-WorkoutApp.a */,
+				B763A1C2C8EB85E85582678C /* libPods-WorkoutApp-WorkoutAppTests.a */,
+				506259B0E79DA921414B74E6 /* libPods-WorkoutApp-tvOS.a */,
+				C62224D2BEFF118F264117EB /* libPods-WorkoutApp-tvOSTests.a */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		787BDD88EF240E9591AD2F63 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				9F3112249DD018C3A385D18F /* Pods-WorkoutApp.debug.xcconfig */,
-				90967C04B2718D90A06073C1 /* Pods-WorkoutApp.release.xcconfig */,
-				38ECB9EC52FBD8085B589F35 /* Pods-WorkoutApp-WorkoutAppTests.debug.xcconfig */,
-				D6A8DAD8A9B4F95CBE3E191C /* Pods-WorkoutApp-WorkoutAppTests.release.xcconfig */,
-				BF4ADFEF84013F9502F29897 /* Pods-WorkoutApp-tvOS.debug.xcconfig */,
-				029F2B2EC4E64879B70F30A4 /* Pods-WorkoutApp-tvOS.release.xcconfig */,
-				5DA02FFB0679B523A0BEFD1C /* Pods-WorkoutApp-tvOSTests.debug.xcconfig */,
-				A10CF07FF477CE8E0C663CBA /* Pods-WorkoutApp-tvOSTests.release.xcconfig */,
-			);
-			name = Pods;
-			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -212,8 +196,8 @@
 				00E356EF1AD99517003FC87E /* WorkoutAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				787BDD88EF240E9591AD2F63 /* Pods */,
-				66330218089643E68516EA5F /* Resources */,
+				C541244DA2436F4CA93152F9 /* Pods */,
+				436464B90C2C48A3AD6457A4 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -231,25 +215,41 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		66330218089643E68516EA5F /* Resources */ = {
+		C541244DA2436F4CA93152F9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6F75755C86C40B35E85D9DC1 /* Pods-WorkoutApp.debug.xcconfig */,
+				A27D499070E605CDD9726B05 /* Pods-WorkoutApp.release.xcconfig */,
+				B2BF625837F8243B34B3F49A /* Pods-WorkoutApp-WorkoutAppTests.debug.xcconfig */,
+				94A86B3ACCF344946DF8DB18 /* Pods-WorkoutApp-WorkoutAppTests.release.xcconfig */,
+				61B8D6245FBC976CA9F951F8 /* Pods-WorkoutApp-tvOS.debug.xcconfig */,
+				46706DC2A4073E7F12717EAB /* Pods-WorkoutApp-tvOS.release.xcconfig */,
+				3577A154B6756261C992E98F /* Pods-WorkoutApp-tvOSTests.debug.xcconfig */,
+				D7AB94C6740C48ABD34146DE /* Pods-WorkoutApp-tvOSTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		436464B90C2C48A3AD6457A4 /* Resources */ = {
 			isa = "PBXGroup";
 			children = (
-				2DEF8BE702F54BF48C2F0544 /* AntDesign.ttf */,
-				D0BB7177542847DF9D80648C /* Entypo.ttf */,
-				B6852940B02E4BCBB9278C50 /* EvilIcons.ttf */,
-				44A2565FC60D47B28BFA96CE /* Feather.ttf */,
-				46FA40D05E28499793CA4DF2 /* FontAwesome.ttf */,
-				A2A11965923C4CBDA3DEE7D0 /* FontAwesome5_Brands.ttf */,
-				7CEB67E9B1E04B43B13B6C5B /* FontAwesome5_Regular.ttf */,
-				050537BA401C4D8AB9B2E975 /* FontAwesome5_Solid.ttf */,
-				C08A9AD259B949878F4C2CCD /* Fontisto.ttf */,
-				DF41C1A462864AAABD258B16 /* Foundation.ttf */,
-				0A1255F86FDC46FC9D216DB5 /* Ionicons.ttf */,
-				4D74B962E5D945708D4B36B7 /* MaterialCommunityIcons.ttf */,
-				315ADA7783DA4F1AB84AFC7B /* MaterialIcons.ttf */,
-				235E6F53D46B4176A3876392 /* Octicons.ttf */,
-				E38B7CECC92F403882FC8FF1 /* SimpleLineIcons.ttf */,
-				DB060531953C4D2D99EF0DEA /* Zocial.ttf */,
+				F514078B3BE5450FA4A19B59 /* AntDesign.ttf */,
+				396CD547F0F64772879240E8 /* Entypo.ttf */,
+				096BDA0F032B4EDD9FCD8DD1 /* EvilIcons.ttf */,
+				18E2CE60738B46149111D9E5 /* Feather.ttf */,
+				6DE7883F1D9E4CD78E978558 /* FontAwesome.ttf */,
+				85437E11D5624613BDD63E55 /* FontAwesome5_Brands.ttf */,
+				2603572C1A50455E9CC0700E /* FontAwesome5_Regular.ttf */,
+				2C2EA4BB856240BBB6457E10 /* FontAwesome5_Solid.ttf */,
+				5FA70248C68644F395E6543B /* Fontisto.ttf */,
+				6A40A0092A4843C7B966637F /* Foundation.ttf */,
+				E09A6E00D4ED487ABD8C576F /* Ionicons.ttf */,
+				A62A7E7B37D74AF4A8D31067 /* MaterialCommunityIcons.ttf */,
+				1C7A839E50024C89AFB88675 /* MaterialIcons.ttf */,
+				46776FA0536F4635BA05E6B2 /* Octicons.ttf */,
+				0B5DCFA26FF74A129E82F90A /* SimpleLineIcons.ttf */,
+				4E141E50E67840CE8841AF03 /* Zocial.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -262,11 +262,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "WorkoutAppTests" */;
 			buildPhases = (
-				F2230D14E50F27203C0847E7 /* [CP] Check Pods Manifest.lock */,
+				7CFC9D44D47EF0C436B4CAB5 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				ED15BCF2E9E5ED2B3588E0E6 /* [CP] Copy Pods Resources */,
+				1AB90310715E8A2CFE0397BF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -282,13 +282,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "WorkoutApp" */;
 			buildPhases = (
-				4124055269F0D2AACD11E347 /* [CP] Check Pods Manifest.lock */,
+				93D89A9090F169FEB02FBC9E /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				DCD8E45B8DDA01DEC6D7B988 /* [CP] Copy Pods Resources */,
+				212DD9D0BF0948F679A228A0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -303,7 +303,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "WorkoutApp-tvOS" */;
 			buildPhases = (
-				C295C566E8E96871AF341CB5 /* [CP] Check Pods Manifest.lock */,
+				B67E960BEC74E9457C2D8B42 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -323,7 +323,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "WorkoutApp-tvOSTests" */;
 			buildPhases = (
-				C82F0E6974CF8FD37E389C92 /* [CP] Check Pods Manifest.lock */,
+				EE355D232FD12FD0AE2CC756 /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -399,22 +399,22 @@
 			files = (
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
-				9FB5E0D88E0C4941B5DF68E8 /* AntDesign.ttf in Resources */,
-				36A9E97DC96C4FA29480FE23 /* Entypo.ttf in Resources */,
-				915D18D6CF0547078E0E8891 /* EvilIcons.ttf in Resources */,
-				D6DF9BD49983414BBE65A930 /* Feather.ttf in Resources */,
-				D6529F6C0F444B95A8A768A5 /* FontAwesome.ttf in Resources */,
-				14F30A29F5324AF8A4B256EC /* FontAwesome5_Brands.ttf in Resources */,
-				72D6F0FC1711481491719D6F /* FontAwesome5_Regular.ttf in Resources */,
-				57AC8675A4894B87B18A16B7 /* FontAwesome5_Solid.ttf in Resources */,
-				B5CB1EB0D7A84A54B42359B4 /* Fontisto.ttf in Resources */,
-				B65F873EBD964167883B2F09 /* Foundation.ttf in Resources */,
-				2DC92A121EB74F39AD4E17EB /* Ionicons.ttf in Resources */,
-				C59C7DE2A84B438389BE1E04 /* MaterialCommunityIcons.ttf in Resources */,
-				5D68987B0077442DB8310EEF /* MaterialIcons.ttf in Resources */,
-				F6AE22B16FA24453B956C554 /* Octicons.ttf in Resources */,
-				96865B01E4414391A336326F /* SimpleLineIcons.ttf in Resources */,
-				CC8FA82E55C145558A45F6FC /* Zocial.ttf in Resources */,
+				D3FDC76ECDE049938C9FE345 /* AntDesign.ttf in Resources */,
+				AA0C35637E9341CEA7357E74 /* Entypo.ttf in Resources */,
+				7C36E08E4B13409CB8F7452C /* EvilIcons.ttf in Resources */,
+				AF4B213A81894FFA80C73527 /* Feather.ttf in Resources */,
+				E02CA2523BFB4F3D82C6E571 /* FontAwesome.ttf in Resources */,
+				1DFBD933F31146D39901FA94 /* FontAwesome5_Brands.ttf in Resources */,
+				14C2B1F7E2F54F18886B200A /* FontAwesome5_Regular.ttf in Resources */,
+				6540CF1D8C3E478986D89FC0 /* FontAwesome5_Solid.ttf in Resources */,
+				E6E3CC035B854EE49697FEA9 /* Fontisto.ttf in Resources */,
+				610A73B86D7942F6878A1B7E /* Foundation.ttf in Resources */,
+				75F6C70043434E08A1DF6BFF /* Ionicons.ttf in Resources */,
+				5BB1D03DA4FF41D88904CC19 /* MaterialCommunityIcons.ttf in Resources */,
+				D6483D244F714179BE0AF76F /* MaterialIcons.ttf in Resources */,
+				DA1E8CBB33C94C1BBF175F74 /* Octicons.ttf in Resources */,
+				9808369360874249A2203EAB /* SimpleLineIcons.ttf in Resources */,
+				E73195474A7D4AF799FED9E8 /* Zocial.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +450,42 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		1AB90310715E8A2CFE0397BF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorkoutApp-WorkoutAppTests/Pods-WorkoutApp-WorkoutAppTests-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WorkoutApp-WorkoutAppTests/Pods-WorkoutApp-WorkoutAppTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		212DD9D0BF0948F679A228A0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WorkoutApp/Pods-WorkoutApp-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WorkoutApp/Pods-WorkoutApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -464,7 +500,29 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		4124055269F0D2AACD11E347 /* [CP] Check Pods Manifest.lock */ = {
+		7CFC9D44D47EF0C436B4CAB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WorkoutApp-WorkoutAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		93D89A9090F169FEB02FBC9E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -486,7 +544,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C295C566E8E96871AF341CB5 /* [CP] Check Pods Manifest.lock */ = {
+		B67E960BEC74E9457C2D8B42 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -508,7 +566,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		C82F0E6974CF8FD37E389C92 /* [CP] Check Pods Manifest.lock */ = {
+		EE355D232FD12FD0AE2CC756 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -524,64 +582,6 @@
 			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-WorkoutApp-tvOSTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		DCD8E45B8DDA01DEC6D7B988 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WorkoutApp/Pods-WorkoutApp-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WorkoutApp/Pods-WorkoutApp-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		ED15BCF2E9E5ED2B3588E0E6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-WorkoutApp-WorkoutAppTests/Pods-WorkoutApp-WorkoutAppTests-resources.sh",
-				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WorkoutApp-WorkoutAppTests/Pods-WorkoutApp-WorkoutAppTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F2230D14E50F27203C0847E7 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-WorkoutApp-WorkoutAppTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -681,7 +681,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 38ECB9EC52FBD8085B589F35 /* Pods-WorkoutApp-WorkoutAppTests.debug.xcconfig */;
+			baseConfigurationReference = B2BF625837F8243B34B3F49A /* Pods-WorkoutApp-WorkoutAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -704,7 +704,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D6A8DAD8A9B4F95CBE3E191C /* Pods-WorkoutApp-WorkoutAppTests.release.xcconfig */;
+			baseConfigurationReference = 94A86B3ACCF344946DF8DB18 /* Pods-WorkoutApp-WorkoutAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -724,7 +724,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9F3112249DD018C3A385D18F /* Pods-WorkoutApp.debug.xcconfig */;
+			baseConfigurationReference = 6F75755C86C40B35E85D9DC1 /* Pods-WorkoutApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -747,7 +747,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 90967C04B2718D90A06073C1 /* Pods-WorkoutApp.release.xcconfig */;
+			baseConfigurationReference = A27D499070E605CDD9726B05 /* Pods-WorkoutApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -768,7 +768,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF4ADFEF84013F9502F29897 /* Pods-WorkoutApp-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 61B8D6245FBC976CA9F951F8 /* Pods-WorkoutApp-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -796,7 +796,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 029F2B2EC4E64879B70F30A4 /* Pods-WorkoutApp-tvOS.release.xcconfig */;
+			baseConfigurationReference = 46706DC2A4073E7F12717EAB /* Pods-WorkoutApp-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -824,7 +824,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DA02FFB0679B523A0BEFD1C /* Pods-WorkoutApp-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 3577A154B6756261C992E98F /* Pods-WorkoutApp-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -851,7 +851,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A10CF07FF477CE8E0C663CBA /* Pods-WorkoutApp-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = D7AB94C6740C48ABD34146DE /* Pods-WorkoutApp-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
