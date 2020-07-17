@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { connect } from 'react-redux';
-import Icon from 'react-native-vector-icons/EvilIcons';
+import { Ionicons } from '@expo/vector-icons';
 import * as actions from '../actions';
 
 class AddCategory extends Component {
     static navigationOptions = {
         tabBarIcon: ({tintColor}) => (
-            <Icon name={'plus'} size={50} color={tintColor} />
+            <Ionicons name={'plus'} size={50} color={tintColor} />
         )
     }
     render() {

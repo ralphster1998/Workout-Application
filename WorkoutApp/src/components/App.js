@@ -6,6 +6,7 @@
  * @flow
  */
 
+import {registerRootComponent} from 'expo';
 import React, {Component} from 'react';
 import {Platform, StyleSheet, Text, View} from 'react-native';
 import { Provider } from 'react-redux';
@@ -15,8 +16,7 @@ import ExerciseList from './ExerciseList';
 
 const store = createStore(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
-type Props = {};
-export default class App extends Component<Props> {
+class App extends Component {
   render() {
     return (
       <Provider store={store}>
@@ -36,3 +36,5 @@ const styles = StyleSheet.create({
     backgroundColor: '#F5FCFF',
   },
 });
+
+export default registerRootComponent(App);

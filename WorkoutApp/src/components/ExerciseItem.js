@@ -1,11 +1,8 @@
 import React from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
 import { connect } from 'react-redux';
-import { getTheme } from 'react-native-material-kit';
 import Icon from 'react-native-vector-icons/EvilIcons';
 import * as actions from '../actions';
-
-const theme = getTheme();
 
 const styles = StyleSheet.create({
     card: {
@@ -34,18 +31,18 @@ const styles = StyleSheet.create({
 
 const ExerciseItem = (props) => {
     return (
-        <View style={[theme.cardStyle, styles.card]}>
+        <View style={ styles.card }>
             <Image 
                 source={require('../images/background.jpg')}
-                style={[theme.cardImageStyle, styles.image]}
+                style={ styles.image }
             />
             <Icon 
                 name={'user'}
                 size={100}
                 style={styles.icon}
             />
-            <Text style={[theme.cardTitleStyle, styles.title]}>{props.exercise.exerciseName}</Text>
-            <Text style={[theme.cardActionStyle, styles.action]}>{props.exercise.url}</Text>
+            <Text style={ styles.title }>{props.exercise.exerciseName}</Text>
+            <Text style={ styles.action }>{props.exercise.url}</Text>
         </View>
     )
 }
