@@ -12,7 +12,7 @@ import {Platform, StyleSheet, Text, View} from 'react-native';
 import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import reducers from '../reducers/ExerciseReducer';
-import ExerciseList from './ExerciseList';
+import Navigation from './Navigation';
 
 const store = createStore(reducers, window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__());
 
@@ -21,7 +21,7 @@ class App extends Component {
     return (
       <Provider store={store}>
         <View style={styles.container}>
-          <ExerciseList />
+          <Navigation />
         </View>
       </Provider>
     );
@@ -31,9 +31,7 @@ class App extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
+    justifyContent: 'center'
   },
 });
 

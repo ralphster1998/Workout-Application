@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
 import { connect } from 'react-redux';
-import Icon from 'react-native-vector-icons/EvilIcons';
+import { AntDesign } from '@expo/vector-icons'; 
 import * as actions from '../actions';
 
 const styles = StyleSheet.create({
@@ -36,7 +36,7 @@ const ExerciseItem = (props) => {
                 source={require('../images/background.jpg')}
                 style={ styles.image }
             />
-            <Icon 
+            <AntDesign
                 name={'user'}
                 size={100}
                 style={styles.icon}
