@@ -1,18 +1,21 @@
 [
     {
         "exerciseName": "Tucked Planche",
+        "category": "Shoulder",
         "currentReps": 15,
         "goalReps": 20,
         "url": "www.youtube.com"
     },
     {
         "exerciseName": "Push Up",
+        "category": "Chest",
         "currentReps": 10,
         "goalReps": 30,
         "url": "www.youtube.com"
     },
     {
         "exerciseName": "Tucked Handstand",
+        "category": "Calisthenics",
         "currentReps": 9,
         "goalReps": 50,
         "url": "www.youtube.com"

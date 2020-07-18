@@ -19,7 +19,20 @@ class ExerciseDetail extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <ScrollView></ScrollView>
+                {/* avoids going sideways for ScrollView*/}
+                <ScrollView showsVerticalScrollIndicator={false}> 
+                    <Image
+                        source={require('../images/background.jpg')}
+                        style={styles.image}
+                        // add stylle if needed
+                    />
+                    <AntDesign name={'user'} size={80} style={styles.icon} />
+                    <AntDesign name={'close'} size={30} style={styles.close} 
+                        onPress={() => this.props.noneSelected()}
+                    />
+                    <Text style={styles.title1}>{this.props.exercise.exerciseName}</Text>
+                    <Text style={styles.title2}>{this.props.exercise.category}</Text>
+                </ScrollView>
             </View>
         )
     }
