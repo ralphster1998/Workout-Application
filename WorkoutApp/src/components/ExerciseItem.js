@@ -1,5 +1,5 @@
 import React from 'react';
-import { Text, View, StyleSheet, Image } from 'react-native';
+import { Text, View, StyleSheet, Image, TouchableWithoutFeedback } from 'react-native';
 import { connect } from 'react-redux';
 import { AntDesign } from '@expo/vector-icons'; 
 import * as actions from '../actions';
@@ -31,19 +31,24 @@ const styles = StyleSheet.create({
 
 const ExerciseItem = (props) => {
     return (
-        <View style={ styles.card }>
-            <Image 
-                source={require('../images/background.jpg')}
-                style={ styles.image }
-            />
-            <AntDesign
-                name={'user'}
-                size={100}
-                style={styles.icon}
-            />
-            <Text style={ styles.title }>{props.exercise.exerciseName}</Text>
-            <Text style={ styles.action }>{props.exercise.url}</Text>
-        </View>
+        <TouchableWithoutFeedback
+        // pass the exercise item to the detail view...
+        onPress={() => props.selectedExercise(props.exercise)}>
+            <View style={ styles.card }>
+                <Image 
+                    source={require('../images/background.jpg')}
+                    style={ styles.image }
+                />
+                <AntDesign
+                    name={'user'}
+                    size={100}
+                    style={styles.icon}
+                />
+                <Text style={ styles.title }>{props.exercise.exerciseName}</Text>
+                <Text style={ styles.action }>{props.exercise.url}</Text>
+            </View>
+        </TouchableWithoutFeedback>
+        
     )
 }
 

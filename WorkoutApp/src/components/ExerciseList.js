@@ -3,6 +3,7 @@ import { View, StyleSheet, FlatList } from 'react-native';
 import { connect } from 'react-redux';
 import { AntDesign } from '@expo/vector-icons'; 
 import ExerciseItem from './ExerciseItem';
+import ExerciseDetail from './ExerciseDetail';
 
 const styles = StyleSheet.create({
     container: {
@@ -20,20 +21,35 @@ class ExerciseList extends Component {
     //         <AntDesign name="user" size={50} color="black" />
     //     )
     // }
+
+    renderInitialView() {
+        if(this.props.detailView === true) { // this is from the reducer detailView
+            return (
+                <ExerciseDetail />
+            )
+        } else {
+            return (
+                <FlatList
+                    data={this.props.exercise}
+                    renderItem={({item}) => <ExerciseItem exercise={item} />}
+                />
+            )
+        }
+    }
     render() {
         return (
             <View style={styles.container}>
-            <FlatList
-                data={this.props.exercise}
-                renderItem={({item}) => <ExerciseItem exercise={item} />}
-            />
+                {this.renderInitialView()}
             </View>
         )
     }
 }
 
 const mapStateToProps = state => {
-    return { exercise: state.exercise }
+    return { 
+        exercise: state.exercise,
+        detailView: state.detailView // you want to pass in the detail view info as well. 
+    }
 }
 
 export default connect(mapStateToProps)(ExerciseList);
