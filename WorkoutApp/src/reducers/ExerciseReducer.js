@@ -22,6 +22,21 @@ export default (state = initialState, action) => {
                 detailView: false, // then adds changes
                 exerciseSelected: null // this selected exercise will pass onto this reducer.
             }
+
+        case 'FORM_UPDATE':
+            return {
+                ...state, // current state (copy)
+                [action.payload.prop]: action.payload.value // when we do updates to form, it will update state to particular form
+            }
+        
+        case 'NEW_EXERCISE':
+            return initialState;
+
+        case 'ADD_EXERCISE':
+            return {
+                ...state,
+                ...action.newExercise
+            }
         default:
             return state;
     }

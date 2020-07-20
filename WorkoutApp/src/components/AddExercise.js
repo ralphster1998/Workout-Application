@@ -36,7 +36,7 @@ class AddExercise extends Component {
         this.props.createNewExercise({ exerciseName, category, currentReps, goalReps, url });
 
         // have access to certain props; navigates to another screen
-        this.props.navigation.navigate('ExerciseList');
+        this.props.navigation.navigate('Exercises');
 
 
     }
