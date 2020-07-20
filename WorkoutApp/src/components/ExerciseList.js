@@ -4,6 +4,7 @@ import { connect } from 'react-redux';
 import { AntDesign } from '@expo/vector-icons'; 
 import ExerciseItem from './ExerciseItem';
 import ExerciseDetail from './ExerciseDetail';
+import { loadInitialExercises } from '../actions';
 
 const styles = StyleSheet.create({
     container: {
@@ -22,6 +23,10 @@ class ExerciseList extends Component {
     //     )
     // }
 
+    // just before component mounts
+    componentWillMount() {
+        this.props.loadInitialExercises();
+    }
     renderInitialView() {
         if(this.props.detailView === true) { // this is from the reducer detailView
             return (
@@ -53,4 +58,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps)(ExerciseList);
+export default connect(mapStateToProps, { loadInitialExercises })(ExerciseList);

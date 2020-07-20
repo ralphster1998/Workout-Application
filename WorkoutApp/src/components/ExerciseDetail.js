@@ -94,6 +94,7 @@ class ExerciseDetail extends Component {
                         <Entypo name="reply-all" size={30} style={styles.textIcons} />                       
                         <Text style={styles.title2}>{this.props.exercise.url}</Text>
                     </View>
+                    
                     <View>
                         <TouchableOpacity>
                             <Image 

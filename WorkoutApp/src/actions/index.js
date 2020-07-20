@@ -41,5 +41,19 @@ export const createNewExercise = ({ exerciseName, category, currentReps, goalRep
             dispatch({ type: 'NEW_EXERCISE' })
         })
         .catch(error => console.log(error))
-    }
-}
+    };
+};
+
+// this loads our new exercises
+export const loadInitialExercises = () => {
+    return (dispatch) => {
+        fetch('http://localhost:3000/exercise')
+            .then((response) => {
+                return response.json();})
+            .then((data) => {
+                dispatch({ type: 'INITIAL_FETCH', payload: data })
+            })
+            .catch(error => console.log(error))
+    };
+};
+

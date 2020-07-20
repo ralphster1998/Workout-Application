@@ -1,13 +1,21 @@
-import exercise from './exercise.json';
-
 const initialState = {
-    exercise,
+    exercise: [],
     detailView: false, // shows actual detail view when pressed
-    exerciseSelected: null
+    exerciseSelected: null,
+    exerciseName: '',
+    category: '',
+    currentReps: '',
+    goalReps: '',
+    url: '',
 }
 
 export default (state = initialState, action) => {
     switch (action.type) {
+        case 'INITIAL_FETCH':
+            return {
+                ...state,
+                exercise: action.payload,
+        }
         case 'SELECTED_EXERCISE':
             // remember this changes the state
             return {
@@ -30,7 +38,14 @@ export default (state = initialState, action) => {
             }
         
         case 'NEW_EXERCISE':
-            return initialState;
+            return {
+                ...state,
+                exerciseName: '',
+                category: '',
+                currentReps: '',
+                goalReps: '',
+                url: '',
+            }
 
         case 'ADD_EXERCISE':
             return {
