@@ -77,7 +77,7 @@ class UpdateExercise extends Component {
                     />
                 </View>
                 <View style={styles.addButton}>
-                    <Button onPress={this.onAddPress.bind(this)} title="Edit" />
+                    <Button onPress={this.onUpdatePress.bind(this)} title="Edit" />
                 </View>
             </ScrollView>
         )
