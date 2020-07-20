@@ -52,6 +52,13 @@ export default (state = initialState, action) => {
                 ...state,
                 ...action.newExercise
             }
+        
+        case 'DELETE_EXERCISE':
+            return {
+                ...state,
+                detailView: false,
+                exerciseSelected: null
+            }
         default:
             return state;
     }

@@ -94,7 +94,17 @@ class ExerciseDetail extends Component {
                         <Entypo name="reply-all" size={30} style={styles.textIcons} />                       
                         <Text style={styles.title2}>{this.props.exercise.url}</Text>
                     </View>
-                    
+                    <View style={styles.editArea}>
+                        <TouchableOpacity style={styles.sections}>
+                            <MaterialIcons name={'autorenew'} size={40} style={styles.editIcon} />
+                            <Text>EDIT</Text>
+                        </TouchableOpacity>
+                        <TouchableOpacity style={styles.sections}
+                            onPress={() => {this.props.deleteExercise(this.props.exercise._id)}}>
+                            <MaterialIcons name={'delete-forever'} size={40} style={styles.editIcon} />
+                            <Text>DELETE</Text>
+                        </TouchableOpacity>
+                    </View>
                     <View>
                         <TouchableOpacity>
                             <Image 

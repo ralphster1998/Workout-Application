@@ -57,3 +57,11 @@ export const loadInitialExercises = () => {
     };
 };
 
+export const deleteExercise = (id) => {
+    return (dispatch) => {
+        fetch(`http://localhost:3000/exercise/${id}`, { method: "DELETE" } )
+            .then(() => {
+                dispatch({ type: 'DELETE_EXERCISE' });
+            })
+    }
+}
