@@ -13,7 +13,7 @@ export default (state = initialState, action) => {
             return {
                 ...state, // current state (copy)
                 detailView: true, // then adds changes
-                exerciseSelected: action.payload // this selected exercise will pass onto this reducer.
+                exerciseSelected: action.selectId// this selected exercise will pass onto this reducer (FIXED IN DEBUGGER)
             }
         case 'NONE_SELECTED':
             // remember this changes the state

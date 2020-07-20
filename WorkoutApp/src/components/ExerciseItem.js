@@ -33,7 +33,7 @@ const ExerciseItem = (props) => {
     return (
         <TouchableWithoutFeedback
         // pass the exercise item to the detail view...
-        onPress={() => props.selectedExercise(props.exercise)}>
+        onPress={() => props.selectExercise(props.exercise)}>
             <View style={ styles.card }>
                 <Image 
                     source={require('../images/background.jpg')}

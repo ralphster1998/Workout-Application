@@ -84,15 +84,15 @@ class ExerciseDetail extends Component {
 
                     <View style={styles.textArea}>
                         <MaterialIcons name="confirmation-number" size={30} style={styles.textIcons} />                        
-                        <Text style={}>{this.props.exercise.currentReps}</Text>
+                        <Text style={styles.title2}>{this.props.exercise.currentReps}</Text>
                     </View>
                     <View style={styles.textArea}>
                         <Entypo name="reply" size={30} style={styles.textIcons} />                        
-                        <Text style={}>{this.props.exercise.goalReps}</Text>
+                        <Text style={styles.title2}>{this.props.exercise.goalReps}</Text>
                     </View>
                     <View style={styles.textArea}>
                         <Entypo name="reply-all" size={30} style={styles.textIcons} />                       
-                        <Text style={}>{this.props.exercise.url}</Text>
+                        <Text style={styles.title2}>{this.props.exercise.url}</Text>
                     </View>
                     <View>
                         <TouchableOpacity>
@@ -127,7 +127,7 @@ class ExerciseDetail extends Component {
 
 const mapStateToProps = state => {
     return { 
-        exerciseSelected: state.exerciseSelected
+        exercise: state.exerciseSelected
     }
 }
 

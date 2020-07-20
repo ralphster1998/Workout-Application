@@ -32,6 +32,7 @@ class ExerciseList extends Component {
                 <FlatList
                     data={this.props.exercise}
                     renderItem={({item}) => <ExerciseItem exercise={item} />}
+                    keyExtractor={(item, index) => index.toString()}
                 />
             )
         }

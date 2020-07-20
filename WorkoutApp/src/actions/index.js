@@ -5,7 +5,7 @@ export const selectExercise = (exerciseId) => {
     };
 };
 
-export const noneExercise = () => {
+export const noneSelected = () => {
     return {
         type: 'NONE_SELECTED',
 
