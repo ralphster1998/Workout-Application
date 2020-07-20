@@ -22,7 +22,7 @@ export const formUpdate = ({ prop, value }) => {
 // this connects to the back end
 export const createNewExercise = ({ exerciseName, category, currentReps, goalReps, url }) => {
     return (dispatch) => {
-        fetch('http://192.168.1.18:3000/exercise', {
+        fetch('http://localhost:3000/exercise', { // for now, you are saving it in your computer server, NOT IN EXPO
             method: 'POST',
             body: JSON.stringify({
                 "exerciseName": exerciseName,

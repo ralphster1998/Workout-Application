@@ -82,7 +82,7 @@ class AddExercise extends Component {
                     />
                 </View>
                 <View style={styles.addButton}>
-                    <Button title="Add" />
+                    <Button onPress={this.onAddPress.bind(this)} title="Add" />
                 </View>
             </ScrollView>
         )

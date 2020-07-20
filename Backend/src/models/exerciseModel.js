@@ -7,6 +7,10 @@ export const ExerciseSchema = new Schema({
         type: String,
         required: 'Enter the exercise name'
     },
+    category: {
+        type: String,
+        required: 'Enter the exercise name'
+    },
     currentReps: {
         type: Number
     },
