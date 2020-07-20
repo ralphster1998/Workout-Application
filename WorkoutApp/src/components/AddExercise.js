@@ -54,6 +54,13 @@ class AddExercise extends Component {
                     />
                     <TextInput 
                         style={styles.fieldStyles}
+                        placeholder={'Category'}
+                        value={this.props.category}
+                        // this does the typing of changes
+                        onChangeText={value => this.props.formUpdate({ prop: 'category', value })}
+                    />
+                    <TextInput 
+                        style={styles.fieldStyles}
                         placeholder={'Current Reps'}
                         value={this.props.currentReps}
                         // this does the typing of changes
