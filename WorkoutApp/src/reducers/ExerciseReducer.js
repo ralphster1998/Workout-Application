@@ -7,6 +7,8 @@ const initialState = {
     currentReps: '',
     goalReps: '',
     url: '',
+    _id: '',
+    toUpdate: false, // check if it's true
 }
 
 export default (state = initialState, action) => {
@@ -59,6 +61,31 @@ export default (state = initialState, action) => {
                 detailView: false,
                 exerciseSelected: null
             }
+        case 'UPDATE_CONTACT':
+            return {
+                ...state,
+                toUpdate: true,
+                exerciseName: action.payload.exerciseName,
+                category: action.payload.category,
+                currentReps: action.payload.currentReps,
+                goalReps: action.payload.goalReps,
+                url: action.payload.url,
+                _id: action.payload._id,
+        }
+
+        case 'SAVE_EXERCISE':
+            return {
+                ...state,
+                toUpdate: false, // this helps to see the DetailView
+                detailView: false,
+                exerciseName: '',
+                category: '',
+                currentReps: '',
+                goalReps: '',
+                url: '',
+                _id: ''
+            }
+
         default:
             return state;
     }

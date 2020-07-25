@@ -65,3 +65,34 @@ export const deleteExercise = (id) => {
             })
     }
 }
+
+export const updateExercise = (exercise) => {
+    return {
+        type: 'UPDATE_CONTACT',
+        payload: exercise,
+    }
+}
+
+export const saveExercise = ({ exerciseName, category, currentReps, goalReps, url, _id }) => {
+    return (dispatch) => {
+        fetch(`http://localhost:3000/exercise/${_id}`, { // for now, you are saving it in your computer server, NOT IN EXPO
+            method: 'PUT',
+            body: JSON.stringify({
+                "exerciseName": exerciseName,
+                "category": category,
+                "currentReps": currentReps,
+                "goalReps": goalReps,
+                "url": url,
+            }),
+            headers: {
+                "Accept": "application/json",
+                "Content-Type": "application/json"
+            }
+        })
+        .then((response) => console.log(response))
+        .then(() => {
+            dispatch({ type: 'SAVE_EXERCISE' })
+        })
+        .catch(error => console.log(error))
+    };
+}

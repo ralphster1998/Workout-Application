@@ -85,9 +85,9 @@ class UpdateExercise extends Component {
 }
 
 const mapStateToProps = state => {
-    const { exerciseName, category, currentReps, goalReps, url } = state;
+    const { exerciseName, category, currentReps, goalReps, url, _id } = state;
 
-    return { exerciseName, category, currentReps, goalReps, url };
+    return { exerciseName, category, currentReps, goalReps, url , _id };
 }
 
 export default connect(mapStateToProps, actions)(UpdateExercise);
