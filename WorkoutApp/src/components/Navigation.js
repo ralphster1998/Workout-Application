@@ -14,11 +14,11 @@ function MyTabs() {
     <Tab.Navigator
       tabBarOptions={{
         activeTintColor: 'white',
-        inactiveTintColor: '#80cbc4',
+        inactiveTintColor: 'green',
         showLabel: false,
         showIcon: true,
         style: {
-          backgroundColor: '#26a69a'
+          backgroundColor: 'black'
         }
       }} 
       screenOptions={ ({route}) => ({
@@ -40,9 +40,9 @@ function MyTabs() {
           return (<AntDesign name={iconName} size={30} color={color} />);
         }
       })}>
+      <Tab.Screen name="Exercises" component={ExerciseList} />
       <Tab.Screen name="Add" component={AddExercise} />
       <Tab.Screen name="Category" component={CategoryList} />
-      <Tab.Screen name="Exercises" component={ExerciseList} />
     </Tab.Navigator>
   );
 }

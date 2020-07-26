@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, FlatList } from 'react-native';
+import { Card } from 'react-native-material-ui';
 import { connect } from 'react-redux';
-import { AntDesign } from '@expo/vector-icons'; 
 import ExerciseItem from './ExerciseItem';
 import ExerciseDetail from './ExerciseDetail';
 import { loadInitialExercises } from '../actions';
@@ -17,12 +17,6 @@ const styles = StyleSheet.create({
 });
 
 class ExerciseList extends Component {
-    // static navigationOptions = {
-    //     tabBarIcon: ({tintColor}) => (
-    //         <AntDesign name="user" size={50} color="black" />
-    //     )
-    // }
-
     // just before component mounts
     componentWillMount() {
         this.props.loadInitialExercises();
@@ -45,7 +39,9 @@ class ExerciseList extends Component {
     render() {
         return (
             <View style={styles.container}>
-                {this.renderInitialView()}
+                <Card>
+                    {this.renderInitialView()}
+                </Card>
             </View>
         )
     }
