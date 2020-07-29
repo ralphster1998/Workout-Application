@@ -21,9 +21,9 @@ function MyTabs() {
           backgroundColor: 'black'
         }
       }} 
-      screenOptions={ ({route}) => ({
-        tabBarIcon: ({focused, size, color}) => {
-          let iconName, iconColor;
+      screenOptions={ ({ route }) => ({
+        tabBarIcon: ({ color }) => {
+          let iconName;
           switch (route.name) {
             case 'Exercises':
               iconName = 'user';

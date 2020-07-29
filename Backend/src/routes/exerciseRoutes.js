@@ -5,6 +5,7 @@ import {
     updateExercise,
     deleteExercise
 } from '../controllers/exerciseController';
+import { loginRequired, login, register } from '../controllers/userControllers'
 
 const routes = (app) => {
     app.route('/exercise')
@@ -13,20 +14,28 @@ const routes = (app) => {
         console.log(`Request from: ${req.originalUrl}`)
         console.log(`Request type: ${req.method}`)
         next();
-    }, getExercises)
+    }, loginRequired, getExercises)
     
     // POST endpoint
-    .post(addNewExercise);
+    .post(loginRequired, addNewExercise);
 
     app.route('/exercise/:exerciseId')
     // get specific Location
-    .get(getExerciseWithID)
+    .get(loginRequired, getExerciseWithID)
     
     // put request
-    .put(updateExercise)
+    .put(loginRequired, updateExercise)
 
     // delete request
-    .delete(deleteExercise);
+    .delete(loginRequired, deleteExercise);
+
+    // login route
+    app.route('/login')
+        .post(login);
+        
+    // registration route
+    app.route('/auth/register')
+        .post(register);
 }
 
 export default routes;
