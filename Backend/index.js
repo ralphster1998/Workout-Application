@@ -2,10 +2,14 @@ import express from 'express';
 import mongoose from 'mongoose';
 import bodyParser from 'body-parser';
 import jsonwebtoken from 'jsonwebtoken';
+import helmet from 'helmet';
 import routes from './src/routes/exerciseRoutes';
 
 const app = express();
 const PORT = process.env.port || 3000;
+
+// helmet
+app.use(helmet())
 
 // mongoose connection
 mongoose.Promise = global.Promise;
@@ -17,6 +21,7 @@ mongoose.connect('mongodb://localhost/workout_db', {
 // bodyparser setup
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
+
 // JWT setup
 app.use((req, res, next) => {
     if (req.headers && req.headers.authorization && req.headers.authorization.split(' ')[0] === 'JWT') {
