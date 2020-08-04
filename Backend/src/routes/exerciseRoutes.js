@@ -30,12 +30,12 @@ const routes = (app) => {
     .delete(loginRequired, deleteExercise);
 
     // login route
-    app.route('/login')
-        .post(login);
+    // app.route('/login')
+    //     .post(login);
         
     // registration route
-    app.route('/auth/register')
-        .post(register);
+    // app.route('/auth/register')
+    //     .post(register);
 }
 
 export default routes;
