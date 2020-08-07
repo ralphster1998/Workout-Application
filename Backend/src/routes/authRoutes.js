@@ -2,8 +2,6 @@ const passport = require("passport");
 const router = require("express").Router();
 const CLIENT_URL = "http://localhost:3000";
 
-var passport = require('passport');
-
 // when login is successful, retrieve user info
 router.get("/login/success", (req, res) => {
     if (req.user) {
@@ -27,7 +25,8 @@ router.get("/login/success", (req, res) => {
   // When logout, redirect to client
   router.get("/logout", (req, res) => {
     req.logout();
-    res.redirect(CLIENT_URL);
+    res.send(req.user);
+    // res.redirect(CLIENT_URL);
   });
 
 // auth with google
@@ -36,12 +35,16 @@ router.get("/google", passport.authenticate("google", {
 }));
 
 // redirect to home page after successfully login via twitter
-router.get(
-  "/google/redirect",
-  passport.authenticate('google', {
-    successRedirect: CLIENT_URL,
-    failureRedirect: "/auth/login/failed"
-  })
-);
+// router.get(
+//   "/google/redirect",
+//   passport.authenticate("google", {
+//     successRedirect: CLIENT_URL,
+//     failureRedirect: "/auth/login/failed"
+//   })
+// );
+router.get("/google/redirect",passport.authenticate("google"),(req,res)=>{
+  return res.send(req.user);
+  res.send("you reached the redirect URI");
+});
 
 module.exports = router;
