@@ -87,6 +87,8 @@ app.get("/", checkAuth, (req, res) => {
 mongoose.Promise = global.Promise;
 mongoose.connect(keys.MONGODB_URI, {
     useNewUrlParser: true,
+    useCreateIndex: true,
+    useFindAndModify: false,
     useUnifiedTopology: true
 });
 

@@ -1,14 +1,15 @@
 const passport = require("passport");
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const KEYS = require("../configs/keys");
-const User = require("../models/userModel");
+const { User, UserWithIndex } = require("../models/userModel");
 
 passport.serializeUser((user, done) => {
     done(null, user.id);
   });
 
 passport.deserializeUser((id, done) => {
-    User.findById(id).then(user => {
+  // User.findById(id).then(user => {
+    UserWithIndex.findById(id).then(user => {
             done(null, user);
         })
         .catch(e => {
@@ -26,14 +27,21 @@ passport.use(
     async (accessToken, refreshToken, profile, done) => {
         
         // find that current user
-        const curUser = await User.findOne({ googleId: profile.id });
+        console.time('lean_with_select')
+        const curUser = 
+                      await UserWithIndex.findOne({ googleId: { $eq: profile.id }}).select({ googleId: 1 });
+                      // await User.findOne({ googleId: { $eq: profile.id }});
+
+                                // .select({ googleId: profile.id })
+                                // .lean();
+        console.timeEnd('lean_with_select')
 
         // create new user database doesn't have this user
         if (!curUser) {
-            const newUser = await new User({
+            const newUser = await new UserWithIndex({
+            // const newUser = await new User({
                 googleId: profile.id,
               }).save();
-
             if (newUser) {
                 done(null, newUser);
             }

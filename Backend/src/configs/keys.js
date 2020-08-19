@@ -4,7 +4,7 @@ const GOOGLE = {
   };
   
 const MONGODB = {
-    MONGODB_URI: 'mongodb://localhost/workout_db'
+    MONGODB_URI: 'mongodb+srv://ralph:raprap@usercluster.hgqwc.mongodb.net/workout_db?retryWrites=true&w=majority'
   };
   
   const SESSION = {

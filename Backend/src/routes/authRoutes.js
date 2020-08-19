@@ -35,16 +35,18 @@ router.get("/google", passport.authenticate("google", {
 }));
 
 // redirect to home page after successfully login via twitter
-// router.get(
-//   "/google/redirect",
-//   passport.authenticate("google", {
-//     successRedirect: CLIENT_URL,
-//     failureRedirect: "/auth/login/failed"
-//   })
-// );
-router.get("/google/redirect",passport.authenticate("google"),(req,res)=>{
-  return res.send(req.user);
-  res.send("you reached the redirect URI");
-});
+router.get(
+  "/google/redirect",
+  passport.authenticate("google", {
+    failureRedirect: "/auth/login/failed"
+  }),
+  function(req, res) {
+    // Successful authentication, redirect home.
+    res.redirect(CLIENT_URL);
+  });
+// router.get("/google/redirect",passport.authenticate("google"),(req,res)=>{
+//   return res.send(req.user);
+//   res.send("you reached the redirect URI");
+// });
 
 module.exports = router;

@@ -7,4 +7,13 @@ const UserSchema = new Schema({
 
 const User = mongoose.model('user', UserSchema);
 
-module.exports = User;
+var IndexedUser = new mongoose.Schema({
+    googleId: { 
+        type: String, 
+        index: true 
+    }
+})
+
+IndexedUser.index({ googleId: -1 })
+const UserWithIndex = mongoose.model('UserWithIndex', IndexedUser)
+module.exports = { User, UserWithIndex };
