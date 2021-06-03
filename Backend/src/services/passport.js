@@ -30,10 +30,6 @@ passport.use(
         console.time('lean_with_select')
         const curUser = 
                       await UserWithIndex.findOne({ googleId: { $eq: profile.id }}).select({ googleId: 1 });
-                      // await User.findOne({ googleId: { $eq: profile.id }});
-
-                                // .select({ googleId: profile.id })
-                                // .lean();
         console.timeEnd('lean_with_select')
 
         // create new user database doesn't have this user
