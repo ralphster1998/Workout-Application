@@ -3,21 +3,23 @@ import mongoose from 'mongoose';
 const Schema = mongoose.Schema;
 
 export const ExerciseSchema = new Schema({
-    exerciseName: {
+    exercise_name: {
         type: String,
         required: 'Enter the exercise name'
     },
-    category: {
-        type: String,
-        required: 'Enter the exercise name'
-    },
-    currentReps: {
+    goal_reps: {
         type: Number
     },
-    goalReps: {
+    sets: {
         type: Number
     },
-    url: {
+    curr_reps: {
+        type: Number
+    },
+    url_link: {
+        type: String
+    },
+    notes: {
         type: String
     },
     created_date: {
