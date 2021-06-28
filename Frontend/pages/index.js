@@ -1,15 +1,15 @@
 import React from 'react';
+import { initStore } from '../store';
 import styles from './index.module.css';
 import Card from './Card';
-import data from './API/data.json';
 
+class Index extends React.Component {
 
-export default class Index extends React.Component {
-    static async getInitialProps () {
-        // for redux codde
-        return {
-            cards: data
-        }
+    // We also add the update for state of get initial props
+    static async getInitialProps ({ store }) {
+        // for redux codde, return the store
+        // calls from the store, and checks what is state at that point
+        return store.dispatch( initialCards() );
     }
 
     render() {
@@ -32,4 +32,9 @@ export default class Index extends React.Component {
             </div>
         )
     }
-}
+};
+
+// So we wrap our code in our store, now we have state available to use in our component
+// apply wrapper in our code
+export default initStore.withRedux( Index );
+
