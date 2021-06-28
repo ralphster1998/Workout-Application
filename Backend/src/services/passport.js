@@ -8,7 +8,6 @@ passport.serializeUser((user, done) => {
   });
 
 passport.deserializeUser((id, done) => {
-  // User.findById(id).then(user => {
     UserWithIndex.findById(id).then(user => {
             done(null, user);
         })
@@ -27,15 +26,12 @@ passport.use(
     async (accessToken, refreshToken, profile, done) => {
         
         // find that current user
-        console.time('lean_with_select')
         const curUser = 
                       await UserWithIndex.findOne({ googleId: { $eq: profile.id }}).select({ googleId: 1 });
-        console.timeEnd('lean_with_select')
 
         // create new user database doesn't have this user
         if (!curUser) {
             const newUser = await new UserWithIndex({
-            // const newUser = await new User({
                 googleId: profile.id,
               }).save();
             if (newUser) {

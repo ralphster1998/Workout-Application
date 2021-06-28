@@ -1,0 +1,40 @@
+{
+  "polyfillFiles": [
+    "static/chunks/polyfills-a54b4f32bdc1ef890ddd.js"
+  ],
+  "devFiles": [],
+  "ampDevFiles": [],
+  "lowPriorityFiles": [
+    "static/iQTSNcl2P3xGVfs_meVom/_buildManifest.js",
+    "static/iQTSNcl2P3xGVfs_meVom/_ssgManifest.js"
+  ],
+  "pages": {
+    "/": [
+      "static/chunks/webpack-715970c8028b8d8e1f64.js",
+      "static/chunks/framework-64eb7138163e04c228e4.js",
+      "static/chunks/main-8f141fd03012b99227c0.js",
+      "static/css/11ba76d73c25f96b36d6.css",
+      "static/chunks/pages/index-1157977d5f83a06295dd.js"
+    ],
+    "/Card": [
+      "static/chunks/webpack-715970c8028b8d8e1f64.js",
+      "static/chunks/framework-64eb7138163e04c228e4.js",
+      "static/chunks/main-8f141fd03012b99227c0.js",
+      "static/css/1438bef67c03ce2a3fab.css",
+      "static/chunks/pages/Card-1a2df1fca13414f15877.js"
+    ],
+    "/_app": [
+      "static/chunks/webpack-715970c8028b8d8e1f64.js",
+      "static/chunks/framework-64eb7138163e04c228e4.js",
+      "static/chunks/main-8f141fd03012b99227c0.js",
+      "static/chunks/pages/_app-a8eaeefeae66525f4ca7.js"
+    ],
+    "/_error": [
+      "static/chunks/webpack-715970c8028b8d8e1f64.js",
+      "static/chunks/framework-64eb7138163e04c228e4.js",
+      "static/chunks/main-8f141fd03012b99227c0.js",
+      "static/chunks/pages/_error-8842bdd603648886795b.js"
+    ]
+  },
+  "ampFirstPages": []
+}

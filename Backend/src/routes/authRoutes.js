@@ -1,3 +1,9 @@
+/*
+TO TEST GOOGLE AUTHENTICATION:
+- do localhost:4000/auth/google
+- then use your account.
+
+*/
 const passport = require("passport");
 const router = require("express").Router();
 const CLIENT_URL = "http://localhost:3000";
@@ -44,9 +50,5 @@ router.get(
     // Successful authentication, redirect home.
     res.redirect(CLIENT_URL);
   });
-// router.get("/google/redirect",passport.authenticate("google"),(req,res)=>{
-//   return res.send(req.user);
-//   res.send("you reached the redirect URI");
-// });
 
 module.exports = router;
