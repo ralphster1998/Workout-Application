@@ -6,11 +6,12 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "node server.js"
   },
   "author": "ralph",
   "license": "ISC",
   "dependencies": {
+    "express": "^4.17.1",
     "next": "^10.0.6",
     "next-redux-wrapper": "^6.0.2",
     "react": "^17.0.1",
