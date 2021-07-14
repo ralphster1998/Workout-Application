@@ -1,7 +1,10 @@
 {
+  "/Card": "pages/Card.html",
+  "/": "pages/index.js",
+  "/ohyeah": "pages/ohyeah.html",
+  "/page2": "pages/page2.html",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/ohyeah": "pages/ohyeah.js",
-  "/": "pages/index.js"
+  "/404": "pages/404.html"
 }
